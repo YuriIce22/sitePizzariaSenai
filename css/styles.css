@@ -1,0 +1,33 @@
+body {
+    background-color:#fceed1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Space Mono', sans-serif;
+}
+
+.principal {
+    text-align: center;
+    width: 350px;
+}
+
+.principal img{
+    width: 300px;
+}
+
+.campo-nome input{
+    border-radius: 40px;
+}
+
+.idade input{
+    border-radius: 30px;
+}
+
+.email input{
+    border-radius: 30px;
+}
+
+.
+

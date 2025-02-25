@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt=BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fontes Space Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+     <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- Titulo -->
+    <title>Cadastro</title>
+</head>
+
+<body>
+
+    <div class="principal">
+
+        <div>
+            <img alt="logo" src="./imagens/logo-pizzaria.png">
+            <h1>Cadastro</h1>
+        </div>
+
+        <form>
+
+
+            <div class="campo-nome">
+                <p>Qual o seu nome e sobrenome?</p>
+                <input type="text" placeholder="Seu nome completo." required>
+            </div>
+
+            <div class="idade">
+                <p>Qual a sua data de nascimento?</p>
+                <input type="date" id="data" placeholder="DD/MM/AAAA" max="2026-01-01" required>
+            </div>
+
+            <div class="email">
+                <p>Qual é o seu email?</p>
+                <input type="email" placeholder="Seu Email." required>
+            </div>
+
+
+            <button href="#">Continuar</button>
+
+        </form>
+
+        <div class="já-tem?">
+        <p>já tem uma conta?</p>
+        <a href="#">Acesse aqui!</a>
+        </div>  
+
+    </div>
+    
+</body>
+</html>
