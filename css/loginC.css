@@ -62,167 +62,128 @@ header img{
 body{
     background-color:#fceed1;
     font-family: 'Space Mono', serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    right: 100px;
 }
 .container img{
-    width: 100%;
-    height: 230px;
-    background-position: center;
-    background-size: cover;
-    object-fit: cover;
-    display: absolute;           
-}
-.pequena-pizza{
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-.pequena-pizza img{
-    height: 250px;
-    width: 250px;
-}
-.infos{
+    width: 700px;
     position: relative;
-    text-align: center;
+    left: 50px;
 }
-.tipos-pizza{
-    position: relative;
+
+.forms h1{
+    margin-bottom: 10px;
+}
+.forms{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+  align-items: center;
 }
-.pizza1 h1{
-    font-size: 25px;
-    margin-top: 10px;
-}
-.pizza1 img{
+
+.emailL input,
+.senhaL input{
     width: 270px;
-    height: 270px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.pizza1{
-    border: 5px solid #F2A74B;
-    color: black;
-    margin-top: 30px;
-    text-align: center;
-    width: 370px;
-    height: 500px;
-    border-radius: 20px;
-    align-items: center;
-    justify-content: center;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.pizza1:hover{
-    color: white;
-    background-color: #720b31;
-    transition: 0.5s;
-}
-.pizza2 h1{
-    font-size: 25px;
-    margin-top: 10px;
-}
-.pizza2 img{
-    width: 270px;
-    height: 270px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.pizza2{
-    border: 5px solid #F2A74B;
-    color: black;
-    margin-top: 30px;
-    text-align: center;
-    width: 370px;
-    height: 500px;
-    border-radius: 20px;
-    align-items: center;
-    justify-content: center;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.pizza2:hover{
-    color: white;
-    background-color: #720b31;
-    transition: 0.5s;
-}
-.pizza3 h1{
-    font-size: 25px;
-    margin-top: 10px;
-}
-.pizza3 img{
-    width: 250px;
-    height: 250px;
-    margin-top: 10px;
+    height: 40px;
+    border: 1px solid #F2A74B;
+    background-color: white;
+    border-radius: 15px;
     margin-bottom: 30px;
-}
-.pizza3{
-    border: 5px solid #F2A74B;
-    color: black;
-    margin-top: 30px;
     text-align: center;
-    width: 370px;
-    height: 500px;
-    border-radius: 20px;
-    align-items: center;
-    justify-content: center;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.pizza3:hover{
-    color: white;
-    background-color: #720b31;
-    transition: 0.5s;
+    color: #F2A74B;
+    margin-left: 13px;
 }
 
-.cadastro-pizza{
-    display: flex;
+.emailL input:hover,
+.senhaL input:hover{
+    background-color: whitesmoke;
+    border-color: #9c692a;
+}
+.emailL input:focus,
+.senhaL input:focus{
+    caret-color: #F2A74B;
+    border-color: #9c692a;
+}
+.emailL input::placeholder,
+.senhaL input::placeholder{
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
+    color: #ce8e4098;
+}
+.emailL input:hover::placeholder,
+.senhaL input:hover::placeholder{
+    background-color: whitesmoke;
+    border-color: #9c692a;
+    color: #F2A74B;
+}
+.emailL input:focus::placeholder,
+.senhaL input:focus::placeholder{
+    caret-color: #F2A74B;
+    border-color: #9c692a;
+    color: whitesmoke;
 }
 
-.cPizza a{
-    text-decoration: none;
-    color: black;
-    align-items: center;
-    justify-content: center;
+.emailL p,
+.senhaL p{
+    font-size: 17px;
+    text-align: center;
 }
 
-.cPizza button{
+
+
+
+.continua
+{
     font-family: 'Lexend', serif;
     font-size: 15px;
-    height: 45px;
-    width: 200px;
+    text-decoration: none;
     margin-left: 12px;
-    border-radius: 10px;
-    background-color: #F2A74B;
+    height: 45px;
+    width: 90px;
+    background-color: #F2C572;
     color: black;
     text-align: center;
     line-height: 43px;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
+    position: relative;
 }
-.cPizza button:hover{
-    background-color: #ee9229;
+.continua:hover{
+    background-color: #F2A679;
     color: black;
 }   
-.cPizza button:active{
+.continua:active{
     color: white;
-    background-color: #720b31;
+    background-color: #F29188;
+}
+.nao-tem{
+    margin-top: 10px;
+}
+.nao-tem a{
+    text-decoration: none;
+    color: #F24822;
 }
 
-/* Fim Body */
+
+
 
 /* Rodapé */
 .rodape {
     background-color: #6d0652;  
     color: #fff;  
     padding: 40px 20px;
-    margin-top: 50px;
+
   }
-  .container{
+  .containerR{
     text-align: center;
   }
   .infoR h3 {
@@ -261,4 +222,3 @@ body{
     font-size: 0.9rem;
   }
   /* Fim Rodapé */
-  

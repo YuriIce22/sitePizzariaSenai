@@ -19,14 +19,16 @@
 
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/cadastroC2.css">
+    <link rel="stylesheet" href="./css/loginC.css">
 </head>
 
 <body>
 
     <header class="header">
         <div class="itensHeader">
-            <img alt="logo-main" src="./imagens/logo-pizzaria2.png">
+            <a href="./index.html">
+                <img alt="logo-main" src="./imagens/logo-pizzaria2.png">
+            </a>
             <div class="botoes">
                 <a href="./loginC.html" class="login">Login</a>
                 <a href="./cadastroC.html" class="cadastro">Cadastro</a>
@@ -40,14 +42,29 @@
 
         <div class="forms">
             <h1>Login</h1>
+            <form action="./loginC.html" method="POST">
 
             <div class="emailL">
-
+                <p>Seu email</p>
+                <input type="email" required>
             </div>
 
+            <div class="senhaL">
+                <p>Sua senha</p>
+                <input type="password" required>
+            </div>
 
+            <input class="continua" type="submit" value="Continuar!">
+
+            </form>
+
+            <div class="nao-tem">
+                <p class="tem-login">Não tem uma conta? <a href="./cadastroC.html">Cadastre-se aqui!</a></p>
+            </div>
 
         </div>
+
+
     </div>
 
 

@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header */
+header {
+    background-color: #730756;
+    height: 130px;
+}
+.itensHeader{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+header img{
+    width: 170px;
+    display: flex;
+    position: relative;
+    bottom: 18px;
+    left: 10px;
+}
+.botoes{
+    position: absolute;
+    display: flex;
+    left: 84%;
+    top: 45px;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+.botoes .login,
+.botoes .cadastro{
+    font-family: 'Lexend', serif;
+    font-size: 15px;
+    text-decoration: none;
+    height: 45px;
+    width: 90px;
+    margin-left: 12px;
+    border-radius: 10px;
+    background-color: #F2A74B;
+    color: black;
+    text-align: center;
+    line-height: 43px;
+    border: none;
+    cursor: pointer;
+}
+.botoes .login:hover,
+.botoes .cadastro:hover{
+    background-color: #ee9229;
+    color: black;
+}   
+.botoes .login:active,
+.botoes .cadastro:active{
+    color: white;
+    background-color: #720b31;
+}
+/* Fim Header */
+
+
+/* Body */
+body{
+    background-color:#fceed1;
+    font-family: 'Space Mono', serif;
+}
+
+.container{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/* Rodapé */
+.rodape {
+    background-color: #6d0652;  
+    color: #fff;  
+    padding: 40px 20px;
+    margin-top: 50px;
+  }
+  .container{
+    text-align: center;
+  }
+  .infoR h3 {
+    font-size: 2rem;
+    text-align: center;
+    color: #ff6347;
+  }
+  .infoR p {
+    font-size: 1rem;
+  }
+  
+  /* Estilo da seção de contato */
+  .contatoR h4 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    color: #ff6347;
+  }
+  
+  .contatoR ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contatoR li {
+    margin-bottom: 5px;
+    font-size: 1rem;
+  }
+
+  /* Estilo do Copyright */
+  .copyrightR {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 0.9rem;
+  }
+  /* Fim Rodapé */
