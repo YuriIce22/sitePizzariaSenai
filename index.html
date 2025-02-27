@@ -1,59 +1,114 @@
 <!DOCTYPE html>
-<html lang="pt=BR">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria Barbieri</title>
 
     <!-- Fontes Space Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Fontes Lexend -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
 
     <!-- CSS -->
-     <link rel="stylesheet" href="./css/styles.css">
-
-    <!-- Titulo -->
-    <title>Cadastro</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
 
-    <div class="principal">
+    <header class="header">
+        <div class="itensHeader">
+            <img alt="logo-main" src="./imagens/logo-pizzaria2.png">
+            <div class="botoes">
+                <a href="./loginC.html" class="login">Login</a>
+                <a href="./cadastroC.html" class="cadastro">Cadastro</a>
+            </div>
+        </div>
+    </header>
 
-        <div>
-            <img alt="logo" src="./imagens/logo-pizzaria.png">
-            <h1>Cadastro</h1>
+    <div class="container">
+        <img alt="primeira-img" src="./imagens/primeira-img.png">
+
+        <div class="pequena-pizza">
+            <img alt="pequena-pizza" src="./imagens/pequena-pizza.png">
         </div>
 
-        <form>
+        <div class="infos">
+            <h1>Sabor Incomparável em Cada Fatia!</h1>
+            <p>Na nossa pizzaria, preparamos as melhores pizzas com ingredientes frescos e uma massa artesanal que vai
+                conquistar seu paladar. <br> 
+                Venha experimentar o verdadeiro sabor italiano em um ambiente acolhedor e
+                familiar.<br> 
+                Cada mordida é uma explosão de sabor!<br>
+            </p>
+        </div>
 
-
-            <div class="campo-nome">
-                <p>Qual o seu nome e sobrenome?</p>
-                <input type="text" placeholder="Seu nome completo." required>
+        <div class="tipos-pizza">
+            <div class="pizza1">
+                <h1>Pizza de Calabresa</h1>
+                <img alt="calabrsa" src="./imagens/calabresa.png">
+                <div class="pizza-">
+                    <p>
+                        Uma deliciosa combinação de calabresa
+                        fatiada, cebola e azeitonas, tudo
+                        sobre uma massa crocante e coberta
+                        com molho especial.
+                    </p>
+                </div>
             </div>
 
-            <div class="idade">
-                <p>Qual a sua data de nascimento?</p>
-                <input type="date" id="data" placeholder="DD/MM/AAAA" max="2026-01-01" required>
+            <div class="pizza2">
+                <h1>Pizza de Quatro-Queijos</h1>
+                <img alt="calabrsa" src="./imagens/quatro-queijos.png">
+                <div class="pizza-">
+                    <p>
+                        Uma mistura irresistível de queijos muçarela, 
+                        parmesão, gorgonzola e provolone, 
+                        criando uma pizza cremosa e saborosa.
+                    </p>
+                </div>
             </div>
 
-            <div class="email">
-                <p>Qual é o seu email?</p>
-                <input type="email" placeholder="Seu Email." required>
+            <div class="pizza3">
+                <h1>Pizza de Frango</h1>
+                <img alt="calabrsa" src="./imagens/frango.png">
+                <div class="pizza-">
+                    <p>
+                        Frango desfiado temperado, coberto com molho cremoso, 
+                        catupiry e azeitonas, criando uma explosão de 
+                        sabores em cada pedaço.
+                    </p>
+                </div>
             </div>
+        </div>
 
-
-            <button href="#">Continuar</button>
-
-        </form>
-
-        <div class="já-tem?">
-        <p>já tem uma conta?</p>
-        <a href="#">Acesse aqui!</a>
-        </div>  
-
+        <footer class="rodape">
+            <div class="containerR">
+              <div class="infoR">
+                <h3>Pizzaria Barbieri</h3>
+                <p>O melhor sabor em cada fatia!</p>
+              </div>
+              <div class="contatoR">
+                <h4>Contato</h4>
+                <ul>
+                  <li>Telefone: (11) 1234-5678    </li>
+                  <li>Email: contato@pizzariabarberie.com    </li>
+                  <li>Endereço: Rua das Pizzas, 123 - São Paulo, SP   </li>
+                </ul>
+              </div>
+            <div class="copyrightR">
+              <p>&copy; 2025 Pizzaria Barbieri - Todos os direitos reservados</p>
+            </div>
+          </footer>
+          
     </div>
-    
 </body>
 </html>

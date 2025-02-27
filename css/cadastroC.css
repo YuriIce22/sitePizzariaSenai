@@ -63,118 +63,110 @@ body{
     background-color:#fceed1;
     font-family: 'Space Mono', serif;
 }
-.container img{
-    width: 100%;
-    height: 230px;
-    background-position: center;
-    background-size: cover;
-    object-fit: cover;
-    display: absolute;           
-}
-.pequena-pizza{
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-.pequena-pizza img{
-    height: 250px;
-    width: 250px;
-}
-.infos{
-    position: relative;
-    text-align: center;
-}
-.tipos-pizza{
-    position: relative;
+.container {
     display: flex;
-    flex-direction: row;
+    position: relative;
+    text-align: center;
     align-items: center;
     justify-content: center;
+    right: 100px;
 }
-.pizza1 h1{
-    font-size: 25px;
-    margin-top: 10px;
+.container img{
+    width: 700px;
 }
-.pizza1 img{
-    width: 270px;
-    height: 270px;
-    margin-top: 10px;
+.forms h1{
     margin-bottom: 10px;
 }
-.pizza1{
-    border: 5px solid #F2A74B;
-    color: black;
-    margin-top: 30px;
-    text-align: center;
-    width: 370px;
-    height: 500px;
-    border-radius: 20px;
+.campo-nome p,
+.cpf p,
+.email p{
+    font-size: 16px;
     align-items: center;
     justify-content: center;
-    margin-left: 20px;
-    margin-right: 20px;
 }
-.pizza1:hover{
-    color: white;
-    background-color: #720b31;
-    transition: 0.5s;
-}
-.pizza2 h1{
-    font-size: 25px;
-    margin-top: 10px;
-}
-.pizza2 img{
+.campo-nome input,
+.cpf input,
+.email input{
     width: 270px;
-    height: 270px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.pizza2{
-    border: 5px solid #F2A74B;
-    color: black;
-    margin-top: 30px;
-    text-align: center;
-    width: 370px;
-    height: 500px;
-    border-radius: 20px;
-    align-items: center;
-    justify-content: center;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.pizza2:hover{
-    color: white;
-    background-color: #720b31;
-    transition: 0.5s;
-}
-.pizza3 h1{
-    font-size: 25px;
-    margin-top: 10px;
-}
-.pizza3 img{
-    width: 250px;
-    height: 250px;
-    margin-top: 10px;
+    height: 40px;
+    border: 1px solid #F2A74B;
+    background-color: white;
+    border-radius: 15px;
     margin-bottom: 30px;
-}
-.pizza3{
-    border: 5px solid #F2A74B;
-    color: black;
-    margin-top: 30px;
     text-align: center;
-    width: 370px;
-    height: 500px;
-    border-radius: 20px;
+    color: #F2A74B;
+}
+.campo-nome input:hover,
+.cpf input:hover,
+.email input:hover{
+    background-color: whitesmoke;
+    border-color: #9c692a;
+}
+.campo-nome input:focus,
+.cpf input:focus,
+.email input:focus{
+    caret-color: #F2A74B;
+    border-color: #9c692a;
+}
+.campo-nome input::placeholder,
+.cpf input::placeholder,
+.email input::placeholder{
     align-items: center;
     justify-content: center;
-    margin-left: 20px;
-    margin-right: 20px;
+    color: #F2A74B;
 }
-.pizza3:hover{
+.campo-nome input:hover::placeholder,
+.cpf input:hover::placeholder,
+.email input:hover::placeholder{
+    background-color: whitesmoke;
+    border-color: #9c692a;
+    color: #F2A74B;
+}
+.campo-nome input:focus::placeholder,
+.cpf input:focus::placeholder,
+.email input:focus::placeholder{
+    caret-color: #F2A74B;
+    border-color: #9c692a;
+    color: whitesmoke;
+}
+.login2
+{
+    font-family: 'Lexend', serif;
+    font-size: 15px;
+    text-decoration: none;
+    margin-left: 12px;
+    padding: 10px;
+    background-color: #F2C572;
+    color: black;
+    text-align: center;
+    line-height: 43px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.login2:hover{
+    background-color: #F2A679;
+    color: black;
+}   
+.login2:active{
     color: white;
-    background-color: #720b31;
-    transition: 0.5s;
+    background-color: #F29188;
 }
+
+.ja-tem{
+    margin-top: 10px;
+}
+.ja-tem a{
+    text-decoration: none;
+    color: #F24822;
+}
+
+
+
+
+
+
+
 /* Fim Body */
 
 /* Rodapé */
@@ -184,7 +176,7 @@ body{
     padding: 40px 20px;
     margin-top: 50px;
   }
-  .container{
+  .containerR{
     text-align: center;
   }
   .infoR h3 {
@@ -223,4 +215,3 @@ body{
     font-size: 0.9rem;
   }
   /* Fim Rodapé */
-  

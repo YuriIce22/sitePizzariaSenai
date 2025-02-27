@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Barbieri</title>
+
+    <!-- Fontes Space Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Fontes Lexend -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/cadastroC2.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="itensHeader">
+            <img alt="logo-main" src="./imagens/logo-pizzaria2.png">
+            <div class="botoes">
+                <a href="./loginC.html" class="login">Login</a>
+                <a href="./cadastroC.html" class="cadastro">Cadastro</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <img alt="logo" src="./imagens/logo-pizzaria.png">
+
+        <div class="forms">
+            <h1>Cadastro</h1>
+            <form>
+
+                <div class="conjunto1">
+
+                <div class="cep">
+
+                    <div class="cep1">
+                    <p>Seu CEP.</p>
+                    <input type="button" value="Consultar" onclick="consultarEndereco()" id="consultarInput" name="botaoConsultar" required/>
+                    </div>
+
+                    <div class="cep2">
+                        <input type="text" placeholder="XXXXX-XXX" name="cep" required>
+                    </div>
+
+                </div>
+
+                    <div class="bairro">
+                        <p>Qual o seu bairro?</p>
+                        <input type="text" placeholder="Seu bairro." name="bairro" required>
+                    </div>
+
+                    <div class="cidade">
+                        <p>Informe sua cidade!</p>
+                        <input type="text" placeholder="Sua cidade." name="cidade" required>
+                    </div>
+
+                </div>
+
+                <div class="conjunto2">
+
+                    <div class="rua">
+                        <p>Qual é sua rua?</p>
+                        <input type="text" placeholder="Sua rua." name="rua" required>
+                    </div>
+
+                    <div class="complemento">
+                        <p>Complemento.</p>
+                        <input type="text" placeholder="Casa/Apartamento." required>
+                    </div>
+
+                    <div class="numero">
+                        <p>Qual o número?</p>
+                        <input type="text" placeholder="1234" maxlength="5" required>
+                    </div>
+                </div>
+
+                <div class="conjunto3">
+
+                    <div class="uf">
+                        <p>UF</p>
+                        <input type="text" placeholder="SP - RJ - ES" maxlength="2" name="uf" required>
+                    </div>
+
+                    <div class="pais">
+                        <p>País?</p>
+                        <input type="text" placeholder="Seu País." name="pais" required>
+                    </div>
+
+                    <div class="contato">
+                        <p>Seu telefone?</p>
+                        <input type="tel" placeholder="(XX)XXXXX-XXXX" maxlength=14" required>
+                    </div>
+                </div>
+            </form>
+
+            <a href="./loginC.html" class="finalizar">Finalizar!</a>
+
+            <div class="ja-tem">
+                <p class="tem-login">Já tem uma conta? <a href="./loginC.html">Entre aqui!</a></p>
+            </div>
+
+        </div>
+    </div>
+
+        <footer class="rodape">
+            <div class="containerR">
+                <div class="infoR">
+                    <h3>Pizzaria Barbieri</h3>
+                    <p>O melhor sabor em cada fatia!</p>
+                </div>
+                <div class="contatoR">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li>Telefone: (11) 1234-5678 </li>
+                        <li>Email: contato@pizzariabarberie.com </li>
+                        <li>Endereço: Rua das Pizzas, 123 - São Paulo, SP </li>
+                    </ul>
+                </div>
+                <div class="copyrightR">
+                    <p>&copy; 2025 Pizzaria Barbieri - Todos os direitos reservados</p>
+                </div>
+        </footer>
+
+
+<script src="js/ende.js"></script>
+</body>
+
+</html>
