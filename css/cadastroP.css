@@ -65,13 +65,32 @@ body{
     font-family: 'Space Mono', serif;
 }
 
-.container{
+.container {
     display: flex;
     position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    right: 100px;
+}
+
+
+.continua
+{
+    font-family: 'Lexend', serif;
+    font-size: 15px;
+    height: 45px;
+    width: 90px;
+    background-color: #F2C572;
+    color: black;
+    text-align: center;
+    line-height: 43px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
     align-items: center;
     justify-content: center;
 }
-
 
 
 
