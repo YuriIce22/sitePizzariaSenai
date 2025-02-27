@@ -129,13 +129,12 @@ body{
     border-color: #9c692a;
     color: whitesmoke;
 }
-.login2
+.continua
 {
     font-family: 'Lexend', serif;
     font-size: 15px;
-    text-decoration: none;
-    margin-left: 12px;
-    padding: 10px;
+    height: 45px;
+    width: 90px;
     background-color: #F2C572;
     color: black;
     text-align: center;
@@ -143,12 +142,14 @@ body{
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    align-items: center;
+    justify-content: center;
 }
-.login2:hover{
+.continua:hover{
     background-color: #F2A679;
     color: black;
 }   
-.login2:active{
+.continua:active{
     color: white;
     background-color: #F29188;
 }
@@ -159,6 +160,7 @@ body{
 .ja-tem a{
     text-decoration: none;
     color: #F24822;
+    margin-right: 10px;
 }
 
 

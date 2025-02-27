@@ -189,7 +189,7 @@ body{
     background-color: #720b31;
 }
 
-.finalizar
+.continua
 {
     font-family: 'Lexend', serif;
     font-size: 15px;
@@ -205,13 +205,12 @@ body{
     cursor: pointer;
     border-radius: 5px;
     position: relative;
-    left: 43%;
 }
-.finalizar:hover{
+.continua:hover{
     background-color: #F2A679;
     color: black;
 }   
-.finalizar:active{
+.continua:active{
     color: white;
     background-color: #F29188;
 }
