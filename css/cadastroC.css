@@ -62,6 +62,8 @@ header img{
 body{
     background-color:#fceed1;
     font-family: 'Space Mono', serif;
+    display: flex;
+    flex-direction: column;
 }
 .container {
     display: flex;
@@ -71,68 +73,138 @@ body{
     justify-content: center;
     right: 100px;
 }
+
 .container img{
     width: 700px;
+    position: relative;
+    left: 50px;
 }
 .forms h1{
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
-.campo-nome p,
-.cpf p,
-.email p{
-    font-size: 16px;
-    align-items: center;
-    justify-content: center;
+.forms{
+    display: flex;
+    flex-direction: column;
 }
-.campo-nome input,
-.cpf input,
-.email input{
-    width: 270px;
-    height: 40px;
-    border: 1px solid #F2A74B;
-    background-color: white;
-    border-radius: 15px;
-    margin-bottom: 30px;
-    text-align: center;
-    color: #F2A74B;
+
+.conjunto1,
+.conjunto2,
+.conjunto3{
+    display: flex;
+    flex-direction: row;
 }
-.campo-nome input:hover,
-.cpf input:hover,
-.email input:hover{
+
+.conjunto1 p,
+.conjunto2 p,
+.conjunto3 p{
+  font-size: 17px;
+}
+
+.conjunto1 input,
+.conjunto2 input,
+.conjunto3 input{
+  width: 270px;
+  height: 40px;
+  border: 1px solid #F2A74B;
+  background-color: white;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #F2A74B;
+  margin-left: 13px;
+  margin-top: 5px;
+}
+
+.conjunto1{
+  display: flex;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.conjunto2,
+.conjunto3{
+  position: relative;
+  bottom: 30px;
+}
+
+.conjunto1 input:hover,
+.conjunto2 input:hover,
+.conjunto3 input:hover{
     background-color: whitesmoke;
     border-color: #9c692a;
 }
-.campo-nome input:focus,
-.cpf input:focus,
-.email input:focus{
+.conjunto1 input:focus,
+.conjunto2 input:focus,
+.conjunto3 input:focus{
     caret-color: #F2A74B;
     border-color: #9c692a;
 }
-.campo-nome input::placeholder,
-.cpf input::placeholder,
-.email input::placeholder{
+.conjunto1 input::placeholder,
+.conjunto2 input::placeholder,
+.conjunto3 input::placeholder{
     align-items: center;
     justify-content: center;
-    color: #F2A74B;
+    color: #ce8e4098;
 }
-.campo-nome input:hover::placeholder,
-.cpf input:hover::placeholder,
-.email input:hover::placeholder{
+.conjunto1 input:hover::placeholder,
+.conjunto2 input:hover::placeholder,
+.conjunto3 input:hover::placeholder{
     background-color: whitesmoke;
     border-color: #9c692a;
     color: #F2A74B;
 }
-.campo-nome input:focus::placeholder,
-.cpf input:focus::placeholder,
-.email input:focus::placeholder{
+.conjunto1 input:focus::placeholder,
+.conjunto2 input:focus::placeholder,
+.conjunto3 input:focus::placeholder{
     caret-color: #F2A74B;
     border-color: #9c692a;
     color: whitesmoke;
 }
+
+.cep{
+  position: relative;
+  bottom:  35px;
+}
+
+.cep1,
+.cep1 input{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 18px;
+}
+
+.cep1 input{
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  height: 25px;
+  position: relative;
+  display: flex;
+  top: 10px;
+  left: 10px;
+  border-radius: 5px;
+  background-color: rgb(255, 250, 250);
+  cursor: pointer;
+}
+
+.cep1 input:hover{
+    background-color: #f89c33;
+    color: rgb(255, 255, 255);
+}   
+.cep1 input:active{
+    color: white;
+    background-color: #720b31;
+}
+
 .continua
 {
     font-family: 'Lexend', serif;
     font-size: 15px;
+    text-decoration: none;
+    margin-left: 12px;
     height: 45px;
     width: 90px;
     background-color: #F2C572;
@@ -142,8 +214,7 @@ body{
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    align-items: center;
-    justify-content: center;
+    position: relative;
 }
 .continua:hover{
     background-color: #F2A679;
@@ -153,30 +224,21 @@ body{
     color: white;
     background-color: #F29188;
 }
-
 .ja-tem{
     margin-top: 10px;
 }
 .ja-tem a{
     text-decoration: none;
     color: #F24822;
-    margin-right: 10px;
 }
 
-
-
-
-
-
-
-/* Fim Body */
 
 /* Rodapé */
 .rodape {
     background-color: #6d0652;  
     color: #fff;  
     padding: 40px 20px;
-    margin-top: 50px;
+
   }
   .containerR{
     text-align: center;

@@ -38,55 +38,86 @@
 
     <div class="container">
 
+        <img alt="logo" src="./imagens/logo-pizzaria.png">
 
-            <img alt="logo" src="./imagens/logo-pizzaria.png">
+        <div class="forms">
+            <h1>Cadastro</h1>
+            <form action="./loginC.html" method="POST">
 
+                <div class="conjunto1">
 
-            <div class="forms">
-                <form action="./cadastroC2.html" method="POST">
-                    <h1>Cadastro</h1>
                     <div class="campo-nome">
-                        <p>Qual o seu nome e sobrenome?</p>
-                        <input type="text" placeholder="Nome e sobrenome." required>
-                    </div>
-                    <div class="cpf">
-                        <p>Qual o seu CPF?</p>
-                        <input type="text" id="cpf" placeholder="XXX.XXX.XXX-XX" maxlength="14" required>
-                        
-                    </div>
-                    <div class="email">
-                        <p>Qual é o seu email?</p>
-                        <input type="email" placeholder="cliente123@seuemail.com" required>
+                        <p>Qual o seu nome?</p>
+                        <input type="text" placeholder="Seu Nome." required>
                     </div>
 
-                    <input class="continua" type="submit" value="Continuar!">
+                    <div class="bairro">
+                        <p>Qual o seu bairro?</p>
+                        <input type="text" placeholder="Seu bairro." name="bairro" required>
+                    </div>
+                    
+                </div>
 
-                </form>
+                <div class="conjunto2">
 
-                <div class="ja-tem">
-                    <p class="tem-login">Já tem uma conta? <a href="./loginC.html">Entre aqui!</a></p>
-                </div>  
+                    <div class="rua">
+                        <p>Qual é sua rua?</p>
+                        <input type="text" placeholder="Sua rua." name="rua" required>
+                    </div>
+
+
+                    <div class="numero">
+                        <p>Qual o número?</p>
+                        <input type="text" placeholder="1234" maxlength="5" required>
+                    </div>
+                </div>
+
+                <div class="conjunto3">
+
+                    <div class="uf">
+                        <p>UF</p>
+                        <input type="text" placeholder="SP - RJ - ES" maxlength="2" name="uf" required>
+                    </div>
+
+
+                    <div class="contato">
+                        <p>Seu telefone?</p>
+                        <input type="tel" placeholder="(XX)XXXXX-XXXX" maxlength=14" required>
+                    </div>
+                </div>
+
+                <input class="continua" type="submit" value="Continuar!">
+                
+            </form>
+
+            <div class="ja-tem">
+                <p class="tem-login">Já tem uma conta? <a href="./loginC.html">Entre aqui!</a></p>
             </div>
+
+        </div>
     </div>
 
-    <footer class="rodape">
-        <div class="containerR">
-          <div class="infoR">
-            <h3>Pizzaria Barbieri</h3>
-            <p>O melhor sabor em cada fatia!</p>
-          </div>
-          <div class="contatoR">
-            <h4>Contato</h4>
-            <ul>
-              <li>Telefone: (11) 1234-5678    </li>
-              <li>Email: contato@pizzariabarberie.com    </li>
-              <li>Endereço: Rua das Pizzas, 123 - São Paulo, SP   </li>
-            </ul>
-          </div>
-        <div class="copyrightR">
-          <p>&copy; 2025 Pizzaria Barbieri - Todos os direitos reservados</p>
-        </div>
-      </footer>
+        <footer class="rodape">
+            <div class="containerR">
+                <div class="infoR">
+                    <h3>Pizzaria Barbieri</h3>
+                    <p>O melhor sabor em cada fatia!</p>
+                </div>
+                <div class="contatoR">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li>Telefone: (11) 1234-5678 </li>
+                        <li>Email: contato@pizzariabarberie.com </li>
+                        <li>Endereço: Rua das Pizzas, 123 - São Paulo, SP </li>
+                    </ul>
+                </div>
+                <div class="copyrightR">
+                    <p>&copy; 2025 Pizzaria Barbieri - Todos os direitos reservados</p>
+                </div>
+        </footer>
 
+
+<script src="js/ende.js"></script>
 </body>
+
 </html>
